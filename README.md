@@ -13,7 +13,6 @@ This application will use the [name of API] API. Below are the documentation and
 - Link to API documentation:
 
 1. https://developer.spotify.com/documentation/web-api
-2. https://developer.spotify.com/documentation/web-playback-sdk
 
 - [API endpoint #1]
   - [List of data values used by the endpoint]
