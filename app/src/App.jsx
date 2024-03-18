@@ -2,9 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import FetchData from "./utils/FetchData";
 import API_KEY from "../config";
 
-import HomePage from "./components/HomePage";
-import LatestNews from "./components/LatestNews"
-import SearchBooks from "./components/SearchBooks"
+import HomePage from "./pages/HomePage";
+import LatestNews from "./pages/LatestNews"
+import SearchBooks from "./pages/SearchBooks"
 import Fallback from "./components/Fallback";
 
 function App() {

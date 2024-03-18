@@ -27,7 +27,7 @@ const RenderTopStories = () => {
           <h3>{story.byline}</h3>
           <p>{story.abstract}</p>
           <button>
-            <a href={story.url} target="_blank" rel="noopener noreferrer">
+            <a className='HomeBtn' href={story.url} target="_blank">
               Read More
             </a>
           </button>

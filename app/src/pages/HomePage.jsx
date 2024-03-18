@@ -1,5 +1,5 @@
-import NavBar from "./NavBar"
-import RenderTopStories from "./RenderTopStories"
+import NavBar from "../components/NavBar"
+import RenderTopStories from "../components/RenderTopStories"
 
 const HomePage = () => {
 
