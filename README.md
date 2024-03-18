@@ -39,9 +39,9 @@ This application will use the New York Times API. Below are the documentation an
 
 The core features of the application include:
 
--  Users can browse through the latest top stories from the New York Times API. They will be presented with a selection of articles covering a variety of topics such as world news, politics, business, technology, and more.
+- Users can browse through the latest top stories from the New York Times API. They will be presented with a selection of articles covering a variety of topics such as world news, politics, business, technology, and more.
 - Users can search by author to see all books: Users have the ability to search for books by a specific author. For each book, users can view details such as the title, author, publication date, summary, and cover image (if available). Users can click on a book to view its reviews.
-- Users can search for real-time stories. They can filter stories based on three categories of interest, such as politics, sports, and entertainment. The application will display a list of approximately 50 latest stories matching the selected categories. 
+- Users can search for real-time stories. They can filter stories based on three categories of interest, such as politics, sports, and entertainment. The application will display a list of approximately 50 latest stories matching the selected categories.
 
 ## 🤔 Stretch User Stories
 
@@ -63,7 +63,7 @@ To ensure that we can complete all core features of the application in 1 week, w
 - [] Design basic layout for displaying top stories - Due by end of day
 - [] Implement search functionality by author for fetching books from New York Times API - Due by end of day
 - [] Design layout for displaying books search results - Due by end of day
-- 
+-
 
 **Day 2**
 
@@ -71,23 +71,34 @@ To ensure that we can complete all core features of the application in 1 week, w
 - [] Design layout for displaying real-time stories - Due by end of day
 
 **Day 3**
+
 - [] Set up React Router for navigation between pages - Due by end of day
 - [] Define routes for top stories, book search, and real-time stories - Due by end of day
 - [] Test navigation between pages to ensure proper routing functionality - Due by end of day
 
 **Day 4**
+
 - [] Implement stretch features such as user authentication and light/dark mode - Due by end of day
 - [] Implement styling Page 1 & 2 application - Due by end of day
 
 **Day 5**
+
 - [] Implement styling Page 3 & 4 application - Due by end of day
 - [] Celebrate completion of MVP milestone! 🎉 - Due by end of day
-
 
 ## Wireframes of each page in your application
 
 Below, you can find wireframes for our project. Each wireframe shows a different page of our application as well as the key components of the application. Details such as specific text values or images are intentionally not included:
 
 [Wireframe for page 1]
+![Alt text](./image/First%20Page.png)
 
 [Wireframe for page 2]
+![Alt text](./image/Second%20Page.png)
+
+[Wireframe for page 3]
+
+- Same Idea as page 1
+
+[Wireframe for page 3]
+![Alt text](./image/Login%20Page.png)
