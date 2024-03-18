@@ -1,10 +1,10 @@
-import NavBar from "./NavBar"
+import NavBar from "../components/NavBar"
 
 const LatestNews = () => {
   return (
     <>
     <NavBar />
-    <p>This is latest News</p>
+    <p>This is latest News</p> {/*just testing*/}
     </>
   )
 }
