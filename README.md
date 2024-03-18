@@ -23,7 +23,7 @@ This application will use the New York Times API. Below are the documentation an
   - Image: multimedia array, which may contain image URLs
   - Section: section
   - Published date: published_date
-- https://api.nytimes.com/svc/books/v3/reviews.json?author=${authorName}&api-key=${API_KEY}
+- https://api.nytimes.com/svc/books/v3/reviews.json?author={authorName}&api-key={API_KEY}
   - book author
   - book title
   - publication
