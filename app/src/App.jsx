@@ -1,7 +1,12 @@
-import HomePage from "./components/HomePage";
-import API_KEY from "../config";
+import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import FetchData from "./utils/FetchData";
+import API_KEY from "../config";
+
+import HomePage from "./components/HomePage";
+import LatestNews from "./components/LatestNews"
+import SearchBooks from "./components/SearchBooks"
+import Fallback from "./components/Fallback";
 
 function App() {
   useEffect(() => {
@@ -42,7 +47,12 @@ function App() {
 
   return (
     <>
-      <HomePage />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/search' element={<SearchBooks />} />
+        <Route path='/Latest-News' element={<LatestNews />} />
+        <Route path="*" element={<Fallback />}/>
+      </Routes>
     </>
   );
 }
