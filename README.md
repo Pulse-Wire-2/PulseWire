@@ -65,7 +65,7 @@ To ensure that we can complete all core features of the application in 1 week, w
 - [x] Set up React Router for navigation between pages - Due by end of day
 - [x] Define routes for top stories, book search, and real-time stories - Due by end of day
 - [x] Test navigation between pages to ensure proper routing functionality - Due by end of day
-- [] Implement fetching and displaying of top stories from New York Times API - Due by end of day
+- [x] Implement fetching and displaying of top stories from New York Times API - Due by end of day
 - [] Implement search functionality by author for fetching books from New York Times API - Due by end of day
 
 ### Day 2
