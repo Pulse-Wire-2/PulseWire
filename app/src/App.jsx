@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
 import FetchData from "./utils/FetchData";
 import API_KEY from "../config";
 
@@ -9,14 +8,6 @@ import SearchBooks from "./components/SearchBooks"
 import Fallback from "./components/Fallback";
 
 function App() {
-  useEffect(() => {
-    const Times_API_URL = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`;
-
-    const doFetch = async () => {
-      const topStories = await FetchData(Times_API_URL);
-      console.log(topStories);
-    };
-    doFetch();
 
 
     /*
@@ -43,7 +34,6 @@ function App() {
       console.log(book);
     };
     fetchData();
-  }, []);
 
   return (
     <>
