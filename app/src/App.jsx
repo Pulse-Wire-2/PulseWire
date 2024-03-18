@@ -21,17 +21,9 @@ function App() {
     //https://api.nytimes.com/svc/news/v3/content/nyt/business.json?api-key=yourkey 
     //https://api.nytimes.com/svc/news/v3/content/nyt/world.json?api-key=yourkey
     
-    // const Books_URL = `const apiUrl = https://api.nytimes.com/svc/books/v3/reviews.json?author=${authorName}&api-key=y=${API_KEY}`;
-    const authorName = "Stephen King";
-    const Books_URL = `https://api.nytimes.com/svc/books/v3/reviews.json?author=${authorName}&api-key=${API_KEY}`;
-
-    // https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json
-
     const fetchData = async () => {
       const realTimeNews = await FetchData(newsWire);
-      const book = await FetchData(Books_URL);
       console.log(realTimeNews);
-      console.log(book);
     };
     fetchData();
 
