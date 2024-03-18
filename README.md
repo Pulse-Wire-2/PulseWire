@@ -16,6 +16,8 @@ This application will use the New York Times API. Below are the documentation an
 2. https://developer.nytimes.com/docs/books-product/1/overview
 3. https://developer.nytimes.com/docs/timeswire-product/1/overview
 
+<!-- add info on how you will get to the articles -->
+
 - https://api.nytimes.com/svc/topstories/v2/home.json?api-key=yourkey
   - Article name: title
   - Image: multimedia array, which may contain image URLs
@@ -55,27 +57,38 @@ If time permits, the following stretch features will be implemented in order of 
 
 To ensure that we can complete all core features of the application in 1 week, we will aim to complete tasks according to the following timeline:
 
-**Day 1**
+### Day 1
+
+<!-- make components of each page DONE-->
 
 - [] Implement fetching and displaying of top stories from New York Times API - Due by end of day
+<!-- when working on styling TO DAY 3 -->
 - [] Design basic layout for displaying top stories - Due by end of day
+<!--  -->
 - [] Implement search functionality by author for fetching books from New York Times API - Due by end of day
+<!-- TO DAY 3 styling -->
 - [] Design layout for displaying books search results - Due by end of day
-
+<!--  -->
 **Day 2**
 
+<!-- move to day one -->
 - [] Implement fetching and displaying of real-time stories based on category from New York Times API - Due by end of day
+<!-- to day 3 during styling -->
 - [] Design layout for displaying real-time stories - Due by end of day
 
 **Day 3**
-
+<!-- add basic styling so that your functionality looks ok -->
+<!-- day 1 -->
 - [] Set up React Router for navigation between pages - Due by end of day
 - [] Define routes for top stories, book search, and real-time stories - Due by end of day
 - [] Test navigation between pages to ensure proper routing functionality - Due by end of day
+<!-- day 1 -->
 
 **Day 4**
-
+<!-- last -->
 - [] Implement stretch features such as user authentication and light/dark mode - Due by end of day
+<!--  -->
+<!-- add more styling if needed -->
 - [] Implement styling Page 1 & 2 application - Due by end of day
 
 **Day 5**
@@ -90,12 +103,15 @@ Below, you can find wireframes for our project. Each wireframe shows a different
 [Wireframe for page 1]
 ![Alt text](./image/First%20Page.png)
 
+<!-- how will user know to search by author; maybe be explicit about it. -->
+
 [Wireframe for page 2]
 ![Alt text](./image/Second%20Page.png)
 
 [Wireframe for page 3]
-
+<!-- make a wireframe for this section -->
 - Same Idea as page 1
 
 [Wireframe for page 3]
 ![Alt text](./image/Login%20Page.png)
+
