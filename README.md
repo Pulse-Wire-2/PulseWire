@@ -57,13 +57,10 @@ To ensure that we can complete all core features of the application in 1 week, w
 
 **Day 1**
 
-**Day 1**
-
 - [] Implement fetching and displaying of top stories from New York Times API - Due by end of day
 - [] Design basic layout for displaying top stories - Due by end of day
 - [] Implement search functionality by author for fetching books from New York Times API - Due by end of day
 - [] Design layout for displaying books search results - Due by end of day
--
 
 **Day 2**
 
