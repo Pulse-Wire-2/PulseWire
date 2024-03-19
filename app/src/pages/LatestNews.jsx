@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 const LatestNews = () => {
   const [results, setResults] = useState([]);
-  const [source, setSource] = useState('all');
-  const [section, setSection] = useState('all');
+  const [source, setSource] = useState("all");
+  const [section, setSection] = useState("all");
 
   useEffect(() => {
     const Times_API_URL = `https://api.nytimes.com/svc/news/v3/content/${source}/${section}.json?api-key=${API_KEY}`;
@@ -19,7 +19,7 @@ const LatestNews = () => {
       setResults(results);
     };
 
-    if (source !== 'all' || section !== 'all') {
+    if (source !== "all" || section !== "all") {
       doFetch();
     }
   }, [source, section]);
@@ -37,13 +37,20 @@ const LatestNews = () => {
         <option value="all">All Sections</option>
         <option value="arts">Arts</option>
         <option value="business">Business</option>
-        <option value= ""  ></option>
+        <option value=""></option>
       </select>
       <div>
         {results.map((article, index) => (
           <div key={index}>
             <h3>{article.title}</h3>
+            <img src={article.multimedia?.[0]?.url} alt={article.title} />
+
             <p>{article.abstract}</p>
+            <button>
+              <a className="HomeBtn" href={article.url} target="_blank">
+                Read More
+              </a>
+            </button>
           </div>
         ))}
       </div>
