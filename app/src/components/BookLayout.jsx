@@ -3,7 +3,7 @@ const BookLayout = ({ books }) => {
     <div className="BookContainer">
       {books.map((book) => {
         return (
-          <div key={book.url}>
+          <div className="BookContain" key={book.url}>
             <h3>{book.book_title}</h3>
             <h3>{book.book_author}</h3>
             <p>{book.summary}</p>

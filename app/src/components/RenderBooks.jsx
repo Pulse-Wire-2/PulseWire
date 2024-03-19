@@ -30,6 +30,7 @@ const RenderBooks = () => {
   }, [authorName]);
 
   if (error) return <p>{error}</p>;
+  
 
   return (
     <>
@@ -40,23 +41,3 @@ const RenderBooks = () => {
 };
 
 export default RenderBooks;
-
-// useEffect(() => {
-//   const fetchBooks = async () => {
-//     try {
-//       let data;
-//       if (!authorName) {
-//         data = await FetchData(`https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key=${API_KEY}`);
-//       } else {
-//         data = await FetchData(`https://api.nytimes.com/svc/books/v3/reviews.json?author=${authorName}&api-key=${API_KEY}`);
-//       }
-//       setBooks(data.results);
-//       setError('');
-//     } catch (error) {
-//       setError(error.message);
-//     }
-//   };
-//   fetchBooks();
-// }, [authorName]);
-
-// if (error) return <p>{error}</p>;
