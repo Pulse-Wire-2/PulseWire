@@ -27,7 +27,7 @@ const LatestNews = () => {
   return (
     <>
       <NavBar />
-      <p>This is latest News</p>
+      <p>This is latest News.</p>
       <select value={source} onChange={(e) => setSource(e.target.value)}>
         <option value="all">All Sources</option>
         <option value="nyt">New York Times</option>
