@@ -1,11 +1,13 @@
 import NavBar from "../components/NavBar"
-import RenderBookSearch from "../components/RenderBookSearch"
+import RenderBooks from "../components/RenderBooks"
 
 const SearchBooks = () => {
   return (
     <>
     <NavBar />
-    <RenderBookSearch />
+    <h1>Don't Know What to Read?</h1>
+    <h2>Look no Further</h2>
+      <RenderBooks />
     </>
   )
 }

@@ -106,7 +106,7 @@ Below, you can find wireframes for our project. Each wireframe shows a different
 ![Alt text](./image/Second%20Page.png)
 
 [Wireframe for page 3]
-![Alt text](./image/Second%20Page.png)
+![Alt text](./image/Third%20Page.png)
 
 [Wireframe for page 4]
 ![Alt text](./image/Login%20Page.png)
