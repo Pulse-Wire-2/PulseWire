@@ -19,15 +19,13 @@ const LatestNews = () => {
       setResults(results);
     };
 
-    if (source !== "all" || section !== "all") {
-      doFetch();
-    }
+    doFetch();
   }, [source, section]);
 
   return (
     <>
       <NavBar />
-      <p>This is latest News.</p>
+      <h1>This is the Latest and Greatest!</h1>
       <select value={source} onChange={(e) => setSource(e.target.value)}>
         <option value="all">All Sources</option>
         <option value="nyt">New York Times</option>
@@ -36,18 +34,37 @@ const LatestNews = () => {
       <select value={section} onChange={(e) => setSection(e.target.value)}>
         <option value="all">All Sections</option>
         <option value="arts">Arts</option>
-        <option value="business">Business</option>
-        <option value=""></option>
+        <option value="finance">Financial/</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="health">Health</option>
+        <option value="science">Science</option>
+        <option value="sports">Sports</option>
+        <option value="technology">Technology</option>
+        <option value="travel">Travel</option>
+        <option value="world">World</option>
+        <option value="opinion">Opinion</option>
+        <option value="magazine">Magazine</option>
+        <option value="fashion">Fashion</option>
+        <option value="food">Food</option>
+        <option value="style">Style</option>
+        <option value="music">Music</option>
+        <option value="en español">En español</option>
+        <option value="U.S.">U.S</option>
+        <option value="Television">Television</option>
       </select>
       <div>
         {results.map((article, index) => (
           <div key={index}>
             <h3>{article.title}</h3>
             <img src={article.multimedia?.[0]?.url} alt={article.title} />
-
             <p>{article.abstract}</p>
             <button>
-              <a className="HomeBtn" href={article.url} target="_blank">
+              <a
+                className="HomeBtn"
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read More
               </a>
             </button>
