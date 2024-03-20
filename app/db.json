@@ -1,5 +1,5 @@
 {
-  "hardcover fiction": [
+  "Hardcover-Fiction": [
       {
         "title": "THE WOMEN",
         "author": "Kristin Hannah",
@@ -161,7 +161,7 @@
         ]
       }
     ],
-    "hardcover nonfiction": [
+    "Hardcover-Nonfiction": [
         {
           "title": "THE HOUSE OF HIDDEN MEANINGS",
           "author": "RuPaul",
@@ -323,7 +323,7 @@
         ]
       }
     ],
-    "Series Books": [
+    "Series-Books": [
       {
         "title": "DIARY OF A WIMPY KID",
         "author": "and Jeff Kinney",
@@ -485,7 +485,7 @@
         ]
       }
     ],
-    "Business Books": [
+    "Business-Books": [
       {
         "title": "ATOMIC HABITS",
         "author": "James Clear",
@@ -647,7 +647,7 @@
         ]
       }
     ],
-    "Graphic Books and Manga": [
+    "Graphic-Books-and-Manga": [
       {
         "title": "WAVERIDER",
         "author": "Kazu Kibuishi",

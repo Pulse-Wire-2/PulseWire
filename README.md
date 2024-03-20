@@ -44,16 +44,14 @@ This application will use the New York Times API. Below are the documentation an
 The core features of the application include:
 
 - Users can browse through the latest top stories from the New York Times API. They will be presented with a selection of articles covering a variety of topics such as world news, politics, business, technology, and more.
-- Users will be able to use a search text input, it will be by author's name to see all their books: Users have the ability to search for books by a specific author. For each book, users can view details such as the title, author, publication date, summary, and cover image (if available). Users can click on a book to view its reviews.
+- Users will have the option to select from five categories to browse the list of best-selling books. Upon clicking, they will be presented with the top five options from the selected category. The display will include book images, titles, authors, and descriptions, along with buy links. Users can like a book by clicking on the corresponding like button.
 - Users can search for real-time stories. They can filter stories based on three categories of interest, such as politics, sports, and entertainment. The application will display a list of approximately 50 latest stories matching the selected categories.
 
 ## 🤔 Stretch User Stories
 
 If time permits, the following stretch features will be implemented in order of priority:
 
-- Users will need to log in to use this application
 - Users will be able to choose between light and dark mode
-- Users will be able to rate the article (like button will go up)
 
 ## 📆 Timeline for reaching MVP in 1 week
 
@@ -66,18 +64,18 @@ To ensure that we can complete all core features of the application in 1 week, w
 - [x] Define routes for top stories, book search, and real-time stories - Due by end of day
 - [x] Test navigation between pages to ensure proper routing functionality - Due by end of day
 - [x] Implement fetching and displaying of top stories from New York Times API - Due by end of day
-- [] Implement search functionality by author for fetching books from New York Times API - Due by end of day
+- [] Implement search functionality by categories from JSON file - Due by end of day
 
 ### Day 2
 
 - [] Implement fetching and displaying of real-time stories based on category from New York Times API - Due by end of day
 - [] Make the control form
-- [] It renders correctly
+- [x] It renders correctly
 
 ### Day 3
 
 <!-- add basic styling so that your functionality looks ok -->
-
+- [] Make Context for books page (like buttons) - Due by end of day
 - [] Design basic layout for displaying top stories - Due by end of day
 - [] Design layout for displaying books search results - Due by end of day
 - [] Design layout for displaying real-time stories - Due by end of day
