@@ -7,7 +7,7 @@ const RenderTopStories = () => {
 
   useEffect(() => {
     const Times_API_URL = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`;
-
+ 
     const doFetch = async () => {
       const response = await FetchData(Times_API_URL);
       const response_data = response[0];

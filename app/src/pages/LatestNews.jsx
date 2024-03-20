@@ -19,15 +19,13 @@ const LatestNews = () => {
       setResults(results);
     };
 
-    if (source !== "all" || section !== "all") {
-      doFetch();
-    }
+    doFetch();
   }, [source, section]);
 
   return (
     <>
       <NavBar />
-      <p>This is latest News.</p>
+      <h1>This is the Latest and Greatest!</h1>
       <select value={source} onChange={(e) => setSource(e.target.value)}>
         <option value="all">All Sources</option>
         <option value="nyt">New York Times</option>
@@ -37,17 +35,23 @@ const LatestNews = () => {
         <option value="all">All Sections</option>
         <option value="arts">Arts</option>
         <option value="business">Business</option>
-        <option value=""></option>
+        <option value="entertainment">Entertainment</option>
+        <option value="health">Health</option>
+        <option value="science">Science</option>
       </select>
       <div>
         {results.map((article, index) => (
           <div key={index}>
             <h3>{article.title}</h3>
             <img src={article.multimedia?.[0]?.url} alt={article.title} />
-
             <p>{article.abstract}</p>
             <button>
-              <a className="HomeBtn" href={article.url} target="_blank">
+              <a
+                className="HomeBtn"
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read More
               </a>
             </button>
