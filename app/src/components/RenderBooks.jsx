@@ -1,34 +1,35 @@
-import FetchData from '../utils/FetchData';
-import { useState, useEffect } from 'react';
-import BookLayout from './BookLayout';
-import BestSellerButtons from './BestSellerButtons';
+import React, { useState, useEffect } from "react";
+import FetchData from "../utils/FetchData";
+import BookLayout from "./BookLayout";
+import BestSellerButtons from "./BestSellerButtons";
 
 const RenderBooks = () => {
   const [bestSellers, setBestSellers] = useState([]);
-  const [query, setQuery] = useState('Hardcover-Fiction');
+  const [query, setQuery] = useState("Hardcover-Fiction");
 
   useEffect(() => {
     const fetchBestSellers = async () => {
       const response = await FetchData(`http://localhost:4000/${query}`);
-      const data = response[0]
+      const data = response[0];
       setBestSellers(data);
-      console.log(data);
-    }
+    };
     fetchBestSellers();
   }, [query]);
 
   const handleButtonClick = (key) => {
     setQuery(key);
-  }
+  };
+
   return (
     <>
-    <BestSellerButtons buttonClick={handleButtonClick}/>
-    <BookLayout booksData={bestSellers}/>
+    <BestSellerButtons buttonClick={handleButtonClick} />
+    <BookLayout booksData={bestSellers} />
     </>
-  )
-}
+  );
+};
 
 export default RenderBooks;
+
 
 
 // const fetchBook = async () => {

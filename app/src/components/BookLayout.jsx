@@ -1,5 +1,4 @@
-const RenderBooks = ({ booksData }) => {
-  
+const BookLayout = ({ booksData }) => {
   return (
     <div>
       {booksData.map((book, index) => (
@@ -12,7 +11,10 @@ const RenderBooks = ({ booksData }) => {
           <ul className="buyLinks">
             {book.buy_links.map((link, j) => (
               <li key={j}>
-                <a href={link.url} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={link.url}
+                  target="_blank"
+                >
                   <button>{link.name}</button>
                 </a>
               </li>
@@ -24,4 +26,4 @@ const RenderBooks = ({ booksData }) => {
   );
 };
 
-export default RenderBooks;
+export default BookLayout;
