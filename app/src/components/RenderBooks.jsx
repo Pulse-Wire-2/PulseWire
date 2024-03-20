@@ -1,16 +1,23 @@
 import FetchData from '../utils/FetchData';
 import { useState, useEffect } from 'react';
 import BookLayout from './BookLayout';
+import API_KEY from '../../config';
 
 const RenderBooks = () => {
   const [bestSellers, setBestSellers] = useState([]);
+
+  const fetchBook = async () => {
+  const overviewUrl = await FetchData(`https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=${API_KEY}`)
+  console.log(overviewUrl)
+  }
+  fetchBook()
 
   useEffect(() => {
     const fetchBestSellers = async () => {
       const response = await FetchData("http://localhost:4000/hardcover fiction");
       const data = response[0]
       setBestSellers(data);
-      // console.log(response);
+      console.log(data);
     }
     fetchBestSellers();
   }, []);
