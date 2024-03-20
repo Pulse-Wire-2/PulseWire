@@ -6,7 +6,6 @@ const HomePage = () => {
   return (
     <>
     <NavBar/>
-    <h1>Hello ...</h1>
     <h2>Top Stories Today</h2>
     <RenderTopStories />
     </>
