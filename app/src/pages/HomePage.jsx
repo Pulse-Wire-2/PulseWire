@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar"
 import RenderTopStories from "../components/RenderTopStories"
+import Footer from "../components/Footer"
 import '../css/HomePage.css';
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
     <NavBar/>
     <h1>Top Stories Today</h1>
     <RenderTopStories />
+    <Footer />
     </>
   )
 }
