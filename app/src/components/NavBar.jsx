@@ -1,16 +1,25 @@
 import { Link } from "react-router-dom";
-
+import ThemeToggleButton from "./ThemeToggleButton";
+import ThemeContext from "../context/ThemeContext";
+import { useContext } from "react";
 const NavBar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <>
-    <nav>
-      <ul className="navLinks">
-        <li className="links"><Link to="/">Home</Link></li>
-        <li className="links"><Link to="/BestSeller">BestSeller</Link></li>
-        <li className="links"><Link to="/Latest-News"> Latest News</Link></li>
-      </ul>
-      <button>Toggle Theme</button>
-    </nav>
+      <nav className={theme === "light" ? "lightNav" : "darkNav"}>
+        <ul className="navLinks">
+          <li className="links">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="links">
+            <Link to="/BestSeller">BestSeller</Link>
+          </li>
+          <li className="links">
+            <Link to="/Latest-News">Latest News</Link>
+          </li>
+        </ul>
+        <ThemeToggleButton />
+      </nav>
     </>
   );
 };

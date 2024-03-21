@@ -12,6 +12,22 @@ nav {
   background-color: lightcoral;
 }
 
+.lightNav {
+  background-color: white;
+  color: black;
+}
+.darkNav {
+  background-color: black;
+  color: white;
+}
+
+.darkNav a {
+  color: white;
+}
+.lightNav a {
+  color: black;
+}
+
 .navLinks {
   display: flex;
   justify-content: space-evenly;
@@ -60,7 +76,10 @@ nav {
   background-color: white;
 }
 
-h3, .author, .description, .rank {
+h3,
+.author,
+.description,
+.rank {
   text-align: center;
 }
 

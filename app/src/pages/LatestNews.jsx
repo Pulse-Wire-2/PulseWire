@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar";
 import API_KEY from "../../config";
 import FetchData from "../utils/FetchData";
 import { useEffect, useState } from "react";
+import '../css/LatestNews.css'
 
 const LatestNews = () => {
   const [results, setResults] = useState([]);
