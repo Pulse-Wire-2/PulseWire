@@ -1,71 +1,80 @@
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
+.latestH1 {
   text-align: center;
-  color: #333;
-}
-
-select {
-  display: block;
-  margin: 1rem auto;
-  padding: 0.5rem;
-  width: 200px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-div.articles-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  background-color: black;
+  color: white;
   padding: 1rem;
 }
 
-article {
-  background-color: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  transition: transform 0.2s;
+.latestConatiner {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
 }
 
-h3 {
-  color: #007bff;
+.latestNewsBox{
+  margin: 3rem;
+  width: 23rem;
+  height: fit-content;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding-bottom: 1rem; /* Added padding to the bottom for spacing inside the box */
 }
 
-img {
-  max-height: 200px;
-  object-fit: cover;
+.imgStory {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0; /* Added padding for spacing around the image */
+}
+
+.lastestImgStory {
+  width: 22.9rem;
+  height: 300px;
+  /* border-radius: 2rem; Uncomment if rounded corners are desired for images */
+}
+
+.latestLinkContain {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem; 
+}
+
+.latestLink {
   width: 100%;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-
-.btnToggle {
-  display: block;
-  padding: 0.5rem;
-  border: none;
-  background-color: #5a6674;
+  padding: 1rem;
+  background-color: #007BFF;
   color: white;
-  border-radius: 5px;
-  cursor: pointer;
   text-align: center;
+  font-size: large;
+  cursor: pointer;
+  text-decoration: none; 
+  display: block; 
 }
 
-.btnToggle a {
+.latestLinkContain {
+  color: white; 
+}
+
+.latestLinkArticle {
+  color: #ccc; 
+  border-bottom: 3.5px solid white; 
+}
+
+.footer {
+  text-align: center;
+  background-color: black;
   color: white;
-  text-decoration: none;
-}
-
-button:hover {
-  background-color: #0056b3;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 3rem;
 }
