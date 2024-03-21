@@ -9,7 +9,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  background-color: lightcoral;
 }
 
 .navLinks {
@@ -41,7 +40,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
-  background-color: lightblue;
+  background-color: white;
   border-radius: 1rem;
 }
 
