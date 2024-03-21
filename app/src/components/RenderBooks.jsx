@@ -31,13 +31,6 @@ const RenderBooks = () => {
 export default RenderBooks;
 
 
-
-// const fetchBook = async () => {
-//   const overviewUrl = await FetchData(`https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=${API_KEY}`)
-//   console.log(overviewUrl)
-//   }
-//   fetchBook()
-
 //   const [booksData, setBooksData] = useState([]);
 
 //   useEffect(() => {
