@@ -1,13 +1,16 @@
 import NavBar from "../components/NavBar"
 import RenderTopStories from "../components/RenderTopStories"
+import Footer from "../components/Footer"
+import '../css/HomePage.css';
 
 const HomePage = () => {
 
   return (
     <>
     <NavBar/>
-    <h2>Top Stories Today</h2>
+    <h1>Top Stories Today</h1>
     <RenderTopStories />
+    <Footer />
     </>
   )
 }

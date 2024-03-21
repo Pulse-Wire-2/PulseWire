@@ -21,16 +21,22 @@ const RenderTopStories = () => {
   return (
     <div className="Container">
       {results.map((story) => (
-        <div key={story.url}>
-          <img src={story.multimedia?.[0]?.url} alt={story.title} />
-          <h3>{story.title}</h3>
-          <h3>{story.byline}</h3>
-          <p>{story.abstract}</p>
-          <button>
+        <div key={story.url} className="newsBox">
+          <div className="topCover">
+            <h3 className="storyTitle">{story.title}</h3>
+          </div>
+          <div className="imgStory">
+          <img src={story.multimedia?.[0]?.url} alt={story.title} className="storyImg"/>
+          </div>
+          <h3 className="author">{story.byline}</h3>
+          <p className="description">{story.abstract}</p>
+          <div className="linkContain">
+            <button className="link">
             <a className="HomeBtn" href={story.url} target="_blank">
               Read More
             </a>
           </button>
+          </div>
         </div>
       ))}
     </div>

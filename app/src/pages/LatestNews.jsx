@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import API_KEY from "../../config";
 import FetchData from "../utils/FetchData";
 import { useEffect, useState } from "react";
@@ -71,6 +72,7 @@ const LatestNews = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </>
   );
 };
