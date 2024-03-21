@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1.homeh1{
   text-align: center;
+  background-color: white;
 }
 
 .Container {
@@ -21,7 +22,7 @@ h1 {
 .newsBox {
   margin: 3rem;
   width: 23rem;
-  height: fit-content;
+  /* height: fit-content; */
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 1rem;
@@ -33,14 +34,13 @@ h1 {
   justify-content: center;
 }
 
-.link {
+button.link {
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 1rem;
   border: none;
   background-color: #007BFF;
-  color: white;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
@@ -58,9 +58,17 @@ h1 {
   border-bottom: 3.5px solid; 
 }
 
-.topCover {
+.topCoverDiv {
   background-color: black;
   color: white;
+}
+
+.storyTitle {
+  color: white;
+}
+
+.author {
+  color: black
 }
 
 .imgStory {

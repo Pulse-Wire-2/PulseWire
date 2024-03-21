@@ -8,13 +8,13 @@ const NavBar = () => {
     <>
       <nav className={theme === "light" ? "lightNav" : "darkNav"}>
         <ul className="navLinks">
-          <li className="links">
+          <li className="pageLink">
             <Link to="/">Home</Link>
           </li>
-          <li className="links">
+          <li className="pageLink">
             <Link to="/BestSeller">BestSeller</Link>
           </li>
-          <li className="links">
+          <li className="pageLink">
             <Link to="/Latest-News">Latest News</Link>
           </li>
         </ul>

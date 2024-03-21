@@ -50,9 +50,8 @@ img {
   margin-bottom: 1rem;
 }
 
-button {
+.btnToggle {
   display: block;
-  width: 100%;
   padding: 0.5rem;
   border: none;
   background-color: #5a6674;
@@ -62,7 +61,7 @@ button {
   text-align: center;
 }
 
-button a {
+.btnToggle a {
   color: white;
   text-decoration: none;
 }

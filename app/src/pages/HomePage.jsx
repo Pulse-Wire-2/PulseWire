@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <>
     <NavBar/>
-    <h1>Top Stories Today</h1>
+    <h1 className="homeh1">Top Stories Today</h1>
     <RenderTopStories />
     <Footer />
     </>

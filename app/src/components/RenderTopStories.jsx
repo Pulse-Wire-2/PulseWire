@@ -22,7 +22,7 @@ const RenderTopStories = () => {
     <div className="Container">
       {results.map((story) => (
         <div key={story.url} className="newsBox">
-          <div className="topCover">
+          <div className="topCoverDiv">
             <h3 className="storyTitle">{story.title}</h3>
           </div>
           <div className="imgStory">
