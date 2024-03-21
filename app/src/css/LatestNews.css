@@ -1,72 +1,79 @@
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-select {
-  display: block;
-  margin: 1rem auto;
-  padding: 0.5rem;
-  width: 200px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-div.articles-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 1rem;
-}
-
-article {
-  background-color: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  transition: transform 0.2s;
-  display: flex;
-  flex-direction: column;
-}
-
-h3 {
-  color: #007bff;
-}
-
-img {
-  max-height: 200px;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 0.5rem;
-  border: none;
-  background-color: #5a6674;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-}
-
-button a {
-  color: white;
-  text-decoration: none;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .topCover {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+  }
+  
+  .newsBox {
+    margin: 3rem;
+    width: 23rem;
+    height: fit-content;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    padding-bottom: 1rem; /* Added padding to the bottom for spacing inside the box */
+  }
+  
+  .imgStory {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0; /* Added padding for spacing around the image */
+  }
+  
+  .storyImg {
+    width: 22.9rem;
+    height: 300px;
+    /* border-radius: 2rem; Uncomment if rounded corners are desired for images */
+  }
+  
+  .linkContain {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem; 
+  
+  .link {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    text-decoration: none; 
+    display: block; 
+  }
+  
+  .LinkHomeBtn {
+    color: white; 
+  
+  .HomeBtn:hover {
+    color: #ccc; /* Lighten color on hover for a visual effect */
+    border-bottom: 3.5px solid white; /* Adjust color to match the desired hover state */
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 3rem; /* Ensure spacing above the footer */
+  }
+  

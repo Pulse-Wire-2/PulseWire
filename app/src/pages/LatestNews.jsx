@@ -27,52 +27,38 @@ const LatestNews = () => {
   return (
     <>
       <NavBar />
-      <h1>This is the Latest and Greatest!</h1>
-      <select value={source} onChange={(e) => setSource(e.target.value)}>
-        <option value="all">All Sources</option>
-        <option value="nyt">New York Times</option>
-        <option value="inyt">International New York Times</option>
-      </select>
-      <select value={section} onChange={(e) => setSection(e.target.value)}>
-        <option value="all">All Sections</option>
-        <option value="arts">Arts</option>
-        <option value="entertainment">Entertainment</option>
-        <option value="health">Health</option>
-        <option value="science">Science</option>
-        <option value="sports">Sports</option>
-        <option value="technology">Technology</option>
-        <option value="travel">Travel</option>
-        <option value="world">World</option>
-        <option value="opinion">Opinion</option>
-        <option value="magazine">Magazine</option>
-        <option value="fashion">Fashion</option>
-        <option value="food">Food</option>
-        <option value="style">Style</option>
-        <option value="music">Music</option>
-        <option value="en español">En español</option>
-        <option value="U.S.">U.S</option>
-        <option value="Television">Television</option>
-      </select>
-      <div>
+      <h1 className="topCover">This is the Latest and Greatest!</h1>
+      <div className="Container">
+        <select className="link" value={source} onChange={(e) => setSource(e.target.value)}>
+          <option value="all">All Sources</option>
+          <option value="nyt">New York Times</option>
+          <option value="inyt">International New York Times</option>
+        </select>
+        <select className="link" value={section} onChange={(e) => setSection(e.target.value)}>
+          <option value="all">All Sections</option>
+      
+        </select>
         {results.map((article, index) => (
-          <div key={index}>
+          <div key={index} className="newsBox">
             <h3>{article.title}</h3>
-            <img src={article.multimedia?.[0]?.url} alt={article.title} />
+            <div className="imgStory">
+              <img src={article.multimedia?.[0]?.url} alt={article.title} className="storyImg" />
+            </div>
             <p>{article.abstract}</p>
-            <button>
+            <div className="linkContain">
               <a
-                className="HomeBtn"
+                className="link HomeBtn"
                 href={article.url}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Read More
               </a>
-            </button>
+            </div>
           </div>
         ))}
       </div>
-      <Footer />
+      <Footer className="footer"/>
     </>
   );
 };
