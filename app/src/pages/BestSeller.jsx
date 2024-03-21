@@ -1,15 +1,17 @@
 import React from 'react';
 import NavBar from "../components/NavBar";
 import RenderBooks from "../components/RenderBooks";
+import '../css/BestSeller.css'
 
 const BestSeller = () => {
 
   return (
     <>
       <NavBar />
-      <h1>Don't Know What to Read?</h1>
-      <h2>Look no Further</h2>
-      <RenderBooks />
+      <h1 className='bsH1'>Don't Know What to Read? Look no Further</h1>
+      <div className='mainContain'>
+        <RenderBooks />
+      </div>
     </>
   );
 };

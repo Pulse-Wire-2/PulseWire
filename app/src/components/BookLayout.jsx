@@ -1,11 +1,13 @@
 const BookLayout = ({ booksData }) => {
   return (
-    <div>
+    <div className="bookContainer">
       {booksData.map((book, index) => (
         <div key={index} className="BookLayout">
           <h3>{book.title}</h3>
           <p className="author">Author: {book.author}</p>
-          <img src={book.book_image} alt={book.title} />
+          <div className="imgContain">
+            <img src={book.book_image} alt={book.title} className="bookImg"/>
+          </div>
           <p className="description">Description: {book.description}</p>
           <p className="rank">Rank: {book.rank}</p>
           <ul className="buyLinks">
@@ -15,7 +17,7 @@ const BookLayout = ({ booksData }) => {
                   href={link.url}
                   target="_blank"
                 >
-                  <button>{link.name}</button>
+                  <button className="buyLinks">{link.name}</button>
                 </a>
               </li>
             ))}
