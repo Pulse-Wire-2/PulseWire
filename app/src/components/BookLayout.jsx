@@ -17,7 +17,9 @@ const BookLayout = ({ booksData }) => {
                   href={link.url}
                   target="_blank"
                 >
+                  <div className="buyContainer">
                   <button className="buyLinks">{link.name}</button>
+                  </div>
                 </a>
               </li>
             ))}

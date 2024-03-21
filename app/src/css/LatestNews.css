@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .latestH1 {
   text-align: center;
   background-color: black;
@@ -28,19 +22,17 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 1rem;
-  padding-bottom: 1rem; /* Added padding to the bottom for spacing inside the box */
+  padding-bottom: 1rem; 
 }
 
-.imgStory {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0; /* Added padding for spacing around the image */
+.latestStoryImg {
+  width: 23rem;
+  height: 300px;
 }
 
 .lastestImgStory {
-  width: 22.9rem;
-  height: 300px;
-  /* border-radius: 2rem; Uncomment if rounded corners are desired for images */
+  display: flex;
+  justify-content: center;
 }
 
 .latestLinkContain {

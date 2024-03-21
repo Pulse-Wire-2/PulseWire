@@ -5,10 +5,10 @@
 }
 
 nav {
-  padding: 2rem;
   display: flex;
   justify-content: space-around;
   align-content: center;
+  padding: 1rem;
 }
 
 .lightNav {
@@ -42,7 +42,6 @@ nav {
   margin: 4rem;
   border: 2px solid black;
   border-radius: 1rem;
-  height: 50rem;
   background-color: beige;
 }
 
@@ -103,10 +102,23 @@ h3 {
   padding: 1rem;
 }
 
+.buyContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .buyLinks {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin-left: auto;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
 }

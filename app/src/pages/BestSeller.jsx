@@ -12,8 +12,8 @@ const BestSeller = () => {
       <h1 className='bsH1'>Don't Know What to Read? Look no Further</h1>
       <div className='mainContain'>
         <RenderBooks />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };

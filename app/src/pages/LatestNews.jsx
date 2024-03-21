@@ -34,11 +34,11 @@ const LatestNews = () => {
         </select>
         {results.map((article, index) => (
           <div key={index} className="latestNewsBox">
-            <h3>{article.title}</h3>
+            <h3 className="latestTitle">{article.title}</h3>
             <div className="lastestImgStory">
-              <img src={article.multimedia?.[0]?.url} alt={article.title} className="storyImg" />
+              <img src={article.multimedia?.[2]?.url} alt={article.title} className="latestStoryImg" />
             </div>
-            <p>{article.abstract}</p>
+            <p className="latestAbstract">{article.abstract}</p>
             <div className="latestLinkContain">
               <a
                 className="latestLinkArticle"
