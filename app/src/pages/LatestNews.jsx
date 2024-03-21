@@ -34,7 +34,6 @@ const LatestNews = () => {
       <select value={section} onChange={(e) => setSection(e.target.value)}>
         <option value="all">All Sections</option>
         <option value="arts">Arts</option>
-        <option value="finance">Financial/</option>
         <option value="entertainment">Entertainment</option>
         <option value="health">Health</option>
         <option value="science">Science</option>
