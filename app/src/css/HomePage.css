@@ -4,6 +4,45 @@
   box-sizing: border-box;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 1rem;
+}
+
+.lightNav {
+  background-color: white;
+  color: black;
+  background-color: rgb(233, 232, 232);
+}
+.darkNav {
+  background-color: black;
+  color: white;
+}
+
+.darkNav a {
+  color: white;
+}
+.lightNav a {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  border-bottom: 2px solid; 
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
 .btnToggle {
   bottom: 0;
   left: 0;
@@ -15,9 +54,15 @@
   font-size: large;
 }
 
-.homeh1{
-  text-align: center;
-  margin: 1rem;
+.bannerDiv {
+  background-image: url('../image/banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  background-position: center calc(100% + 340px);
+  /* background-position: center center; */
+  border: 1px solid black;
+  border-top: none;
 }
 
 .topStoriesContainer {

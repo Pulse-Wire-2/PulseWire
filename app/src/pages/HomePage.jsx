@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <>
     <NavBar/>
-    <h1 className="homeh1">Top Stories Today</h1>
+    <div className="bannerDiv"></div>
     <RenderTopStories />
     <Footer />
     </>

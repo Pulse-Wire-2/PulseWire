@@ -4,44 +4,6 @@
   box-sizing: border-box;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  padding: 1rem;
-}
-
-.lightNav {
-  background-color: white;
-  color: black;
-  background-color: rgb(233, 232, 232);
-}
-.darkNav {
-  background-color: black;
-  color: white;
-}
-
-.darkNav a {
-  color: white;
-}
-.lightNav a {
-  color: black;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover{
-  border-bottom: 2px solid; 
-}
-
-.navLinks {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .pageLink {
   margin-left: 18rem;
   list-style: none;
