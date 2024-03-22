@@ -25,13 +25,15 @@ const RenderTopStories = () => {
           <div className="topCoverDiv">
             <h3 className="storyTitle">{story.title}</h3>
           </div>
-          <div className="imgStory">
+          <div className="divImgStory">
           <img src={story.multimedia?.[1]?.url} alt={story.title} className="storyImg"/>
           </div>
-          <h3 className="author">{story.byline}</h3>
-          <p className="description">{story.abstract}</p>
+          <div className="h3P">
+            <h3 className="author">{story.byline}</h3>
+            <p className="description">{story.abstract}</p>
+          </div>
           <div className="linkContain">
-            <button className="link">
+            <button className="linkReadMore">
             <a className="HomeBtn" href={story.url} target="_blank">
               Read More
             </a>
