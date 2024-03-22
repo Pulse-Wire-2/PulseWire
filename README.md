@@ -24,11 +24,19 @@ This application will use the New York Times API. Below are the documentation an
     - Image: multimedia array, which may contain image URLs
     - Section: section
     - Published date: published_date
-- https://api.nytimes.com/svc/books/v3/reviews.json?author={authorName}&api-key={API_KEY}
-  - we will recieve an array of objects named results and we descruture to recieve these specifc data
-    - Article name: title
-    - Section: section
-    - Published date: published_date
+- http://localhost:4000/Hardcover-Fiction
+- http://localhost:4000/Hardcover-Nonfiction
+- http://localhost:4000/Series-Books
+- http://localhost:4000/Business-Books
+- http://localhost:4000/Graphic-Books-and-Manga
+  - we will recieve an array of objects named results array and we descruture to recieve these specifc data
+    - Title
+    - Author
+    - Description
+    - Book image
+    - Buy link 
+      - 5 different buy links
+
 - https://api.nytimes.com/svc/news/v3//content/{source}/{section}.json?api-key=yourkey
   - we will recieve an array of objects named results and we descruture to recieve these specifc data
     - Title
