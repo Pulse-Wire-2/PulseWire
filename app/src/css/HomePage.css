@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -59,8 +64,7 @@ a:hover{
   background-size: cover;
   background-repeat: no-repeat;
   height: 50rem;
-  background-position: center calc(100% + 340px);
-  /* background-position: center center; */
+  background-position: center;
   border: 1px solid black;
   border-top: none;
 }
