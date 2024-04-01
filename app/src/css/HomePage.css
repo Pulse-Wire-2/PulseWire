@@ -82,6 +82,11 @@ a:hover{
   height: fit-content;
   border-radius: 5px;
   box-shadow: 8px 6px 4px 0 rgba(0, 0, 0, 0.352);
+  transition: transform 0.3s ease;
+}
+
+.newsBox:hover {
+  transform: scale(1.1);
 }
 
 .topCoverDiv {

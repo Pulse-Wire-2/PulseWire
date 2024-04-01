@@ -3,7 +3,18 @@ import FetchData from "../utils/FetchData";
 import BookLayout from "./BookLayout";
 import BestSellerButtons from "./BestSellerButtons";
 
-const RenderBooks = () => {
+export const BooksBanner = () => {
+  return (
+    <div className="bookBanner">
+      <div className="headBanner">
+        <h1>Dont Know What To Read?</h1>
+        <h2>Look No Further</h2>
+      </div>
+    </div>
+  )
+}
+
+export const RenderBooks = () => {
   const [bestSellers, setBestSellers] = useState([]);
   const [query, setQuery] = useState("Hardcover-Fiction");
 
@@ -27,8 +38,6 @@ const RenderBooks = () => {
     </>
   );
 };
-
-export default RenderBooks;
 
 
 //   const [booksData, setBooksData] = useState([]);
